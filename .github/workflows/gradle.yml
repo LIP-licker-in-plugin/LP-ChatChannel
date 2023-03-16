@@ -1,4 +1,4 @@
-name: DP-ChatChannel
+name: LP-ChatChannel
 on:
   push:
 jobs:

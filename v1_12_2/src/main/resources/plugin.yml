@@ -1,9 +1,9 @@
-name: DP-ChatChannel
+name: LP-ChatChannel
 version: 1.0.0.2
-main: com.darksoldier1404.dcc.ChatChannel
-authors: [ DEAD_POOLIO_ ]
+main: com.licker2689.lcc.ChatChannel
+authors: [ licker2689 ]
 depend:
-  - DPP-Core
+  - LP-Core
 commands:
-  dcc:
+  lcc:
     aliases: [채팅채널]
