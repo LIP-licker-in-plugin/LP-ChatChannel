@@ -3,6 +3,7 @@ package com.licker2689.lcc;
  
 import com.licker2689.lpc.utils.DataContainer;
 import com.licker2689.lcc.events.LCCEvent;
+import com.licker2689.lcc.commands.LCCCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
