@@ -60,7 +60,34 @@ task DS_BUILD {
 
 repositories {
     mavenCentral()
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-1.19.2/'
+        credentials {
+            username providers.gradleProperty('github.username').get()
+            password providers.gradleProperty('github.token').get()
+        }
+        authentication {
+            digest(BasicAuthentication)
+        }
+    }
 
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-api-1.19.2/'
+        credentials {
+            username providers.gradleProperty('github.username').get()
+            password providers.gradleProperty('github.token').get()
+        }
+        authentication {
+            digest(BasicAuthentication)
+        }
+    }
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven {
+        url = 'http://licker2689.kro.kr:8081/repository/maven-releases/'
+        allowInsecureProtocol = true
+    }
+    maven {
+        url = 'http://licker2689.kro.kr:8081/repository/lip-release/'
+        allowInsecureProtocol = true
+    }
 }
 
 dependencies {
