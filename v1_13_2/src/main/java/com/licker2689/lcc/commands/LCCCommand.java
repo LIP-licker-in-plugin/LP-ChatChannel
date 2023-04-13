@@ -1,6 +1,6 @@
 package com.licker2689.lcc.commands;
 
-import com.darksoldier1404.dppc.utils.DataContainer;
+import com.licker2689.lpc.utils.DataContainer;
 import com.licker2689.lcc.ChatChannel;
 import com.licker2689.lcc.functions.LCCFunction;
 import org.bukkit.command.Command;

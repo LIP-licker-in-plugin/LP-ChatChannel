@@ -1,7 +1,8 @@
 package com.licker2689.lcc;
 
  
-import com.darksoldier1404.dppc.utils.DataContainer;
+import com.licker2689.lpc.utils.DataContainer;
+import com.licker2689.lcc.commands.LCCCommand;
 import com.licker2689.lcc.events.LCCEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

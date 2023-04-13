@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.darksoldier1404'
+group 'com.licker2689'
 version = '1.0.0.2'
 
 compileJava.options.encoding = 'UTF-8'
@@ -23,12 +23,32 @@ build {
 
 repositories {
     mavenCentral()
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-1.17.1/'
+        credentials {
+            username providers.gradleProperty('github.username').get()
+            password providers.gradleProperty('github.token').get()
+        }
+        authentication {
+            digest(BasicAuthentication)
+        } 
+    }
+
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-api-1.17.1/'
+        credentials {
+            username providers.gradleProperty('github.username').get()
+            password providers.gradleProperty('github.token').get()
+        }
+        authentication {
+            digest(BasicAuthentication)
+        } 
+    }
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
     maven {
-        url "http://feather-s.kr:8083/repository/maven-public/"
+        url = 'http://licker2689.kro.kr:8081/repository/maven-releases/'
         allowInsecureProtocol = true
     }
     maven {
-        url "http://feather-s.kr:8083/repository/dpp-releases/"
+        url = 'http://licker2689.kro.kr:8081/repository/lip-release/'
         allowInsecureProtocol = true
     }
 }
@@ -39,5 +59,5 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     compileOnly 'org.bukkit.craftbukkit:craftbukkit:R0.1:1.17.1'
     compileOnly 'org.spigotmc:spigot-api:R0.1:1.17.1'
-    compileOnly 'com.darksoldier1404.dppc:DPP-Core:1.17.1-SNAPSHOT'
+    compileOnly 'com.licker2689.lpc:LP-Core:R0.1:1.17.1'
 }

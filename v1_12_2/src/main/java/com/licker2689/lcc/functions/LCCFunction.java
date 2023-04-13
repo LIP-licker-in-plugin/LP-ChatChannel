@@ -1,7 +1,7 @@
 package com.licker2689.lcc.functions;
 
-import com.darksoldier1404.dppc.utils.ColorUtils;
-import com.darksoldier1404.dppc.utils.DataContainer;
+import com.licker2689.lpc.utils.ColorUtils;
+import com.licker2689.lpc.utils.DataContainer;
 import com.licker2689.lcc.ChatChannel;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

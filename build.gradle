@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.darksoldier1404'
+group 'com.licker2689'
 version = '1.0.0.2'
 
 compileJava.options.encoding = 'UTF-8'
@@ -60,14 +60,7 @@ task DS_BUILD {
 
 repositories {
     mavenCentral()
-    maven {
-        url "http://feather-s.kr:8083/repository/maven-public/"
-        allowInsecureProtocol = true
-    }
-    maven {
-        url "http://feather-s.kr:8083/repository/dpp-releases/"
-        allowInsecureProtocol = true
-    }
+
 }
 
 dependencies {
@@ -76,5 +69,5 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     compileOnly 'org.bukkit.craftbukkit:craftbukkit:R0.1:1.19.3'
     compileOnly 'org.spigotmc:spigot-api:R0.1:1.19.3'
-    compileOnly 'com.darksoldier1404.dppc:DPP-Core:1.19.3-SNAPSHOT'
+    compileOnly 'com.licker2689.lpc:DPP-Core:1.19.3-SNAPSHOT'
 }
