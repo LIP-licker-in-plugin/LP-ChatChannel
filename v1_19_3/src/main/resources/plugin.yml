@@ -1,5 +1,5 @@
 name: LP-ChatChannel
-version: 1.0.0.3
+version: 1.0.0.4
 main: com.licker2689.lcc.ChatChannel
 api-version: 1.19
 authors: [ licker2689 ]
