@@ -1,0 +1,10 @@
+name: LP-ChatChannel
+version: 1.0.0.3
+main: com.licker2689.lcc.ChatChannel
+api-version: 1.19
+authors: [ licker2689 ]
+depend:
+  - LP-Core
+commands:
+  lcc:
+    aliases: [채팅채널]
