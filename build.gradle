@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.licker2689'
-version = '1.0.0.2'
+version = '1.0.0.3'
 
 compileJava.options.encoding = 'UTF-8'
 tasks.withType(JavaCompile) {
@@ -60,7 +60,7 @@ task DS_BUILD {
 
 repositories {
     mavenCentral()
-    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-1.19.2/'
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-1.19.4/'
         credentials {
             username providers.gradleProperty('github.username').get()
             password providers.gradleProperty('github.token').get()
@@ -70,7 +70,7 @@ repositories {
         }
     }
 
-    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-api-1.19.2/'
+    maven { url = 'https://raw.githubusercontent.com/LIP-licker-in-plugin/library-mirror/spigot-api-1.19.4/'
         credentials {
             username providers.gradleProperty('github.username').get()
             password providers.gradleProperty('github.token').get()
@@ -94,7 +94,7 @@ dependencies {
     implementation 'org.jetbrains:annotations:23.0.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
-    compileOnly 'org.bukkit.craftbukkit:craftbukkit:R0.1:1.19.3'
-    compileOnly 'org.spigotmc:spigot-api:R0.1:1.19.3'
-    compileOnly 'com.licker2689.lpc:DPP-Core:1.19.3-SNAPSHOT'
+    compileOnly 'org.bukkit.craftbukkit:craftbukkit:R0.1:1.19.4'
+    compileOnly 'org.spigotmc:spigot-api:R0.1:1.19.4'
+    compileOnly 'com.licker2689.lpc:LP-Core:R0.1:1.19.4'
 }
